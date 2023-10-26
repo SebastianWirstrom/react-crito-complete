@@ -7,7 +7,6 @@ import img_partnersLogo_5 from '../../assets/images/Gobona.svg'
 
 function PartnersLogo() {
   return (
-    
     <section className="partners-logo">
         <div className="container">
             <img src={img_partnersLogo_1} alt="Partner logo"/>
@@ -17,7 +16,6 @@ function PartnersLogo() {
             <img src={img_partnersLogo_5} alt="Partner logo"/>
         </div>
     </section>
-    
   )
 }
 
