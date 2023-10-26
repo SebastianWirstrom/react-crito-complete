@@ -1,5 +1,7 @@
 import React from 'react'
 import FeaturesBox from './FeaturesBox'
+import Button from '../Generics/Button/Button'
+import SectionTitle from '../Generics/SectionTitle/SectionTitle'
 
 function Features() {
 
@@ -8,11 +10,10 @@ function Features() {
     return (
         <section className="features">
             <div className="container">
-                <div className="section-title">
-                    <h2><p id="p-features">Features</p>Our accounting is trusted by thousands of companies</h2>                   
-                    <a className="btn-yellow" href="consulting.html">Get Consulting <i className="fa-regular fa-arrow-up-right"></i></a>
-                </div>
-                
+                <div className="title-and-button">
+                    <SectionTitle redTitle={"Features"} title={"Our Accounting is Trusted by Thousands of Companies"}/>                  
+                    <Button href={"/consulting/"} text={"Get Consulting" } icon={"fa-regular fa-arrow-up-right"} />
+                </div>   
                 <div className="feature-content">  
                     <FeaturesBox /> 
                 </div>                                                
