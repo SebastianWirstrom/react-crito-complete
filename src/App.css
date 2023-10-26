@@ -92,7 +92,7 @@ html, body {
 
 header {
   background-color: #F0EFE9;
-  padding: 16px;
+  padding-top: 16px;
 }
 header .container {
   display: flex;
@@ -100,13 +100,13 @@ header .container {
   justify-content: space-between;
   gap: 70px;
 }
-header .container .menu-bars {
+header .container .mobile-menu-bars {
   font-size: 25px;
   border: none;
   background-color: transparent;
 }
 @media (min-width: 992px) {
-  header .container .menu-bars {
+  header .container .mobile-menu-bars {
     display: none;
   }
 }
@@ -141,6 +141,10 @@ header .container .menu .top-menu .contact-information {
   }
 }
 header .container .menu .top-menu .contact-information .content-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 30px;
   border-right: 1px solid #DAD9D3;
   padding-right: 30px;
@@ -149,8 +153,12 @@ header .container .menu .top-menu .contact-information .content-box {
   font-weight: 300;
 }
 header .container .menu .top-menu .contact-information .content-box i {
-  margin-right: 3px;
+  margin-right: 10px;
   font-size: 1.2em;
+}
+header .container .menu .top-menu .contact-information .content-box p {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 header .container .menu .top-menu .contact-information .content-box.last {
   border: none;
@@ -158,7 +166,7 @@ header .container .menu .top-menu .contact-information .content-box.last {
 header .container .menu .top-menu .social-media a {
   color: #191919;
   font-size: 1.3rem;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 header .container .menu .top-menu .social-media a:hover {
   color: #797979;
@@ -166,19 +174,21 @@ header .container .menu .top-menu .social-media a:hover {
 }
 header .container .menu .main-menu {
   display: flex;
-  justify-content: space-between;
+}
+header .container .menu .main-menu nav {
+  padding-top: 30px;
+  justify-content: left;
   align-items: center;
-  padding-top: 10px;
 }
 header .container .menu .main-menu nav a {
   display: inline-block;
   color: #191919;
   text-decoration: none;
-  margin-right: 32px;
+  margin-right: 45px;
   position: relative;
 }
 header .container .menu .main-menu nav a.active {
-  font-weight: 500;
+  font-weight: 600;
 }
 header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
   content: "";
@@ -191,9 +201,14 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   bottom: -3px;
   transform: translate(calc(50% - 15px));
 }
-header .container .menu .main-menu .btn-login {
-  padding-top: 12px;
-  padding-bottom: 12px;
+header .container .menu .login-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: -35px;
+}
+header .container .menu .login-btn .btn-yellow {
+  padding: 12px 30px;
 }
 
 footer {
