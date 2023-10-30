@@ -1135,31 +1135,7 @@ footer {
                 justify-content: space-around;
                 align-items: center;
             }
-        }
-
-        .our-team-dot {
-            display: none;
-
-            @media (min-width: 768px) {
-                display: flex;
-                justify-content: center;
-                column-gap: 15px;
-                padding-top: 30px;
-
-            .dot {
-                
-                i {
-                    font-size: 12px;
-                    color: #c3ab70;
-
-                    &:hover {
-                        color: #191919;
-                    }
-                }   
-            }
-            }
-            
-        }  
+        } 
     }
 }
 

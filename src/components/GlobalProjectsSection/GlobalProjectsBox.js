@@ -20,7 +20,7 @@ const GlobalProjectsBox = () => {
             <img src={box.src}/>
             <h3>{box.title}</h3>
             <div className='readmore'>
-                <p>Read More</p><i class="fa-regular fa-arrow-up-right"></i> 
+                <p>Read More</p><i className="fa-regular fa-arrow-up-right"></i> 
             </div>
         </div>
     ))}

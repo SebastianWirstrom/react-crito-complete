@@ -1,17 +1,18 @@
 import React from 'react'
 import SectionTitle from '../Generics/SectionTitle/SectionTitle'
 import GlobalProjectsBox from './GlobalProjectsBox'
+import Button from '../Generics/Button/Button'
 
 const GlobalProjects = () => {
   return (
-    <section class="gobal-projects">
-            <div class="container">
+    <section className="gobal-projects">
+            <div className="container">
                 <SectionTitle redTitle={"Project & Case Studies"} title={"Let's Look At Our Global Projects"} />
-                <div class="project-and-cases">
+                <div className="project-and-cases">
                     <GlobalProjectsBox />
                 </div>
-                <div class="center-button">
-                    <a class="btn-black" href="projects.html">All Recent Projects <i class="fa-regular fa-arrow-up-right"></i></a>
+                <div className="center-button">
+                    <Button type="black" text="All Recent Projects " icon="fa-regular fa-arrow-up-right" link="/projects/"/>
                 </div>
             </div>
         </section>
