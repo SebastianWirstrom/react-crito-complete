@@ -5,6 +5,7 @@ import PartnersLogo from '../components/PartnersLogoSection/PartnersLogo'
 import Features from '../components/FeaturesSection/Features'
 import AboutCompany from '../components/AboutCompanySection/AboutCompany'
 import OurServices from '../components/OurServicesSection/OurServices'
+import WhyChooseUs from '../components/WhyChooseUsSection/WhyChooseUs'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Features /> 
       <AboutCompany />  
       <OurServices />
+      <WhyChooseUs />
     </>
   )
 }
