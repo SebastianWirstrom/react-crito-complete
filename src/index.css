@@ -516,6 +516,7 @@ footer .footer-bottom .social-media {
 }
 .about .container .picture-section .img-founder {
   width: 100%;
+  margin-bottom: 40px;
 }
 .about .container .picture-section .blue-box {
   background-color: #BEEBFF;
@@ -525,7 +526,7 @@ footer .footer-bottom .social-media {
   height: 140px;
   width: 280px;
   padding-top: 15px;
-  box-shadow: -10px 10px 100px 5px #a8a8a8;
+  box-shadow: -10px 10px 25px 5px #a8a8a8;
 }
 .about .container .picture-section .blue-box .blue-box-text {
   display: flex;
@@ -553,37 +554,41 @@ footer .footer-bottom .social-media {
   font-size: 14px;
   font-style: italic;
 }
-.about .container .section-title {
-  text-align: center;
+.about .container .section-text p {
+  color: #F94D1C;
 }
-.about .container .section-title p {
-  margin-top: 50px;
-}
-.about .container .section-title .section-text p {
+.about .container .section-text #p-section-text {
   color: #191919;
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
-.about .container .section-title .section-text .buttons {
+.about .container .section-text .buttons {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
-.about .container .section-title .section-text .buttons .btn-black {
+.about .container .section-text .buttons .btn-black {
   margin-left: 20px;
   padding: 12px 25px;
 }
-.about .container .section-title .section-text .buttons .btn-transparent {
+.about .container .section-text .buttons .btn-transparent {
   margin-left: 40px;
   margin-right: 15px;
   padding: 9px 6px;
 }
-.about .container .section-title .section-text .buttons .btn-transparent i {
+.about .container .section-text .buttons .btn-transparent i {
   padding-right: 8px;
 }
-.about .container .section-title .section-text .buttons p {
-  margin-top: 40px;
-  font-size: 12px;
+.about .container .section-text .buttons #p-intro-video {
+  margin-top: 10px;
+  color: #191919;
+  font-size: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .about .container {
@@ -616,34 +621,25 @@ footer .footer-bottom .social-media {
     font-weight: 500;
     font-family: "Inter", sans-serif;
   }
-  .about .container .section-title {
-    text-align: left;
-  }
-  .about .container .section-title p {
+  .about .container p {
     margin-top: 15px;
   }
-  .about .container .section-title h2 {
+  .about .container h2 {
     margin-bottom: 30px;
   }
-  .about .container .section-title .section-text p {
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 50px;
-    margin-top: 40px;
+  .about .container .section-text p {
+    color: #F94D1C;
   }
-  .about .container .section-title .section-text .buttons {
+  .about .container .section-text .buttons {
     margin-top: 100px;
   }
-  .about .container .section-title .section-text .buttons .btn-black {
+  .about .container .section-text .buttons .btn-black {
     margin-left: 0;
     padding: 12px 35px;
   }
-  .about .container .section-title .section-text .buttons p {
+  .about .container .section-text .buttons #p-intro-video {
+    margin-top: 15px;
     font-size: 16px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    margin-top: 50px;
   }
 }
 

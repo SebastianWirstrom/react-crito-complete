@@ -3,6 +3,8 @@ import Header from '../components/Header/Header'
 import Showcase from '../components/ShowcaseSection/Showcase'
 import PartnersLogo from '../components/PartnersLogoSection/PartnersLogo'
 import Features from '../components/FeaturesSection/Features'
+import AboutCompany from '../components/AboutCompanySection/AboutCompany'
+import OurServices from '../components/OurServicesSection/OurServices'
 
 const Home = () => {
   return (
@@ -10,8 +12,10 @@ const Home = () => {
       <Header />
       <Showcase /> 
       <PartnersLogo />
-      <Features />   
-      </>
+      <Features /> 
+      <AboutCompany />  
+      <OurServices />
+    </>
   )
 }
 
