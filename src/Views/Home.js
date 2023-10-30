@@ -6,6 +6,7 @@ import Features from '../components/FeaturesSection/Features'
 import AboutCompany from '../components/AboutCompanySection/AboutCompany'
 import OurServices from '../components/OurServicesSection/OurServices'
 import WhyChooseUs from '../components/WhyChooseUsSection/WhyChooseUs'
+import GlobalProjects from '../components/GlobalProjectsSection/GlobalProjects'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <AboutCompany />  
       <OurServices />
       <WhyChooseUs />
+      <GlobalProjects />
     </>
   )
 }

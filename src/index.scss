@@ -1023,8 +1023,8 @@ footer {
 
                 .readmore {
                     padding: 15px;
-                    display: block;
-                    text-align: right;
+                    display: flex;
+                    justify-content: end;
                     font-family: 'Inter', sans-serif;
                     font-weight: 500;
                     font-size: 14px; 
@@ -1032,12 +1032,19 @@ footer {
                     color: #191919;
 
                     i {
-                        margin-left: 3px;
+                        margin-top: 5px;
+                        margin-left: 5px;
                     }
                 }
 
                 &:hover .readmore {
-                    text-decoration: underline;
+                    p {
+                        text-decoration: underline;
+                    }
+                    i {
+                        text-decoration: none;
+                    }
+                    
                 }
             }
         }

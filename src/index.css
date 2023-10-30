@@ -869,8 +869,8 @@ footer .footer-bottom .social-media {
 }
 .gobal-projects .container .project-and-cases .project .readmore {
   padding: 15px;
-  display: block;
-  text-align: right;
+  display: flex;
+  justify-content: end;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -878,10 +878,14 @@ footer .footer-bottom .social-media {
   color: #191919;
 }
 .gobal-projects .container .project-and-cases .project .readmore i {
-  margin-left: 3px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
-.gobal-projects .container .project-and-cases .project:hover .readmore {
+.gobal-projects .container .project-and-cases .project:hover .readmore p {
   text-decoration: underline;
+}
+.gobal-projects .container .project-and-cases .project:hover .readmore i {
+  text-decoration: none;
 }
 .gobal-projects .container .center-button {
   margin-top: 50px;
