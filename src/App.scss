@@ -479,7 +479,9 @@ footer {
         @media (min-width: 768px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            
             border: 2px solid #d1d1d1;
+            
         }
 
         .title-and-button {
@@ -488,10 +490,25 @@ footer {
             justify-content: center;
             margin-bottom: 40px;
 
+            @media (min-width: 768px) {
+                display: block;
+                padding: 20px;
+                margin-top: 50px;
+            }
+
             .section-title {
                 margin-top: 40px;
-                margin-bottom: 30px;
+                margin-bottom: 40px;
                 text-align: center;
+
+                @media (min-width: 768px) {
+                    
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    margin-left: 40px;
+                    margin-right: 80px;
+                }
+                
 
                 h2 {
                     font-size: 35px;
@@ -514,7 +531,10 @@ footer {
                 width: 100%;
 
                 @media (min-width: 768px) {
-                    width: 91%;
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 40px;
+                    width: 75%;
                 }
             }
         }
@@ -524,19 +544,26 @@ footer {
             display: flex;
             flex-direction: column;
             text-align: center;
+            
 
             @media (min-width: 768px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 text-align: left;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                
+                
+                
             }
 
             .feat-box {
-                margin-bottom: 20px;   
+                margin: 20px 20px;   
                 border-bottom: 1px solid #dad9d3;
 
                 @media (min-width: 768px) {
-                    margin-bottom: 0;
+                    margin-top: 60px;
+                    margin-right: 50px;
                     border: none;
                 }
 
