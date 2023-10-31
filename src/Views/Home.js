@@ -10,6 +10,7 @@ import GlobalProjects from '../components/GlobalProjectsSection/GlobalProjects'
 import MeetOurTeam from '../components/MeetOurTeamSection/MeetOurTeam'
 import Testimonial from '../components/TestimonialSection/Testimonial'
 import ArticlesAndNews from '../components/ArticlesSection/ArticlesAndNews'
+import Newsletter from '../components/NewsletterSection/Newsletter'
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <MeetOurTeam />
       <Testimonial />
       <ArticlesAndNews />
+      <Newsletter />
     </>
   )
 }
