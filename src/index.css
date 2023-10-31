@@ -1209,20 +1209,19 @@ footer .footer-bottom .social-media {
 .contacts-showcase-main .container .contacts-showcase .showcase-link {
   display: flex;
   justify-content: center;
-  align-items: center;
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-.contacts-showcase-main .container .contacts-showcase .showcase-link a {
+.contacts-showcase-main .container .contacts-showcase .showcase-link p {
   color: #555555;
   text-decoration: none;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
-.contacts-showcase-main .container .contacts-showcase .showcase-link a.active {
+.contacts-showcase-main .container .contacts-showcase .showcase-link #p-contacts {
   color: #191919;
-  font-weight: 500;
+  font-weight: 400;
 }
 .contacts-showcase-main .container .contacts-showcase h2 {
   display: flex;

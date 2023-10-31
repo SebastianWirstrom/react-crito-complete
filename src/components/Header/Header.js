@@ -3,13 +3,13 @@ import img_logoType from '../../assets/images/Logo.svg'
 import TopMenuContact from './TopMenu/TopMenuContact'
 import SocialMediaBar from '../Generics/SocialMediaBar/SocialMediaBar'
 import Button from '../Generics/Button/Button'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Header() {
   return (
     <header>
         <div className="container">
-            <a href="index.html"><img src={img_logoType} alt="crito logotype" /></a>
+            <Link to='/'><img src={img_logoType} alt="crito logotype"/></Link>
             <button className="mobile-menu-bars"><i className="fa-solid fa-bars-staggered"></i></button>
             <div className="menu">
                 <div className="top-menu">

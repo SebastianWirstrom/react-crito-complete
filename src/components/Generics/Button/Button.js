@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Button({type, link, text, icon}) {
 
@@ -16,7 +17,7 @@ function Button({type, link, text, icon}) {
 
   return (
     <>
-        <a className={(buttonColor())} link={link}>{text} <i className={icon}></i></a>
+        <Link to={link} className={(buttonColor())}>{text}<i className={icon}></i></Link>
     </>
   )
 }
