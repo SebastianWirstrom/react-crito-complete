@@ -9,6 +9,7 @@ import WhyChooseUs from '../components/WhyChooseUsSection/WhyChooseUs'
 import GlobalProjects from '../components/GlobalProjectsSection/GlobalProjects'
 import MeetOurTeam from '../components/MeetOurTeamSection/MeetOurTeam'
 import Testimonial from '../components/TestimonialSection/Testimonial'
+import ArticlesAndNews from '../components/ArticlesSection/ArticlesAndNews'
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <GlobalProjects />
       <MeetOurTeam />
       <Testimonial />
+      <ArticlesAndNews />
     </>
   )
 }

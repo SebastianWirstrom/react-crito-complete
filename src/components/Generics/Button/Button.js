@@ -16,7 +16,7 @@ function Button({type, link, text, icon}) {
 
   return (
     <>
-        <a className={(buttonColor())} href={link}>{text} <i className={icon}></i></a>
+        <a className={(buttonColor())} link={link}>{text} <i className={icon}></i></a>
     </>
   )
 }
