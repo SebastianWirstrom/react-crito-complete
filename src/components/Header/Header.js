@@ -2,8 +2,8 @@ import React from 'react'
 import img_logoType from '../../assets/images/Logo.svg'
 import TopMenuContact from './TopMenu/TopMenuContact'
 import SocialMediaBar from '../Generics/SocialMediaBar/SocialMediaBar'
-import TopMenuNav from './TopMenu/TopMenuNav'
 import Button from '../Generics/Button/Button'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
   return (
@@ -21,10 +21,12 @@ function Header() {
                     <SocialMediaBar/>          
                 </div>
                 <div className="main-menu">
-                    <TopMenuNav status="active" link="/index/" name="Home"/>
-                    <TopMenuNav link="/services/" name="Services"/>
-                    <TopMenuNav link="/news/" name="News"/>
-                    <TopMenuNav link="/contacts/" name="Contacts"/>
+                    <nav>
+                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/Services/">Service</NavLink>
+                        <NavLink to="/News/">News</NavLink>
+                        <NavLink to="/Contacts/">Contact</NavLink>
+                    </nav>
                 </div>
                 <div className="login-btn">
                     <Button text="Login" link="/login/" icon="fa-regular fa-arrow-up-right"/>

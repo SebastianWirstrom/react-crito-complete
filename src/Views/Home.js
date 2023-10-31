@@ -11,6 +11,7 @@ import MeetOurTeam from '../components/MeetOurTeamSection/MeetOurTeam'
 import Testimonial from '../components/TestimonialSection/Testimonial'
 import ArticlesAndNews from '../components/ArticlesSection/ArticlesAndNews'
 import Newsletter from '../components/NewsletterSection/Newsletter'
+import Footer from '../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <Testimonial />
       <ArticlesAndNews />
       <Newsletter />
+      <Footer />
     </>
   )
 }

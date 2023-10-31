@@ -4,13 +4,13 @@ import Button from '../Generics/Button/Button'
 
 const Newsletter = () => {
   return (
-    <section class="newsletter">
-        <img class="background-lines-right" src={img_backgroundLinesNL} alt=""/>
-        <div class="container">
+    <section className="newsletter">
+        <img className="background-lines-right" src={img_backgroundLinesNL} alt=""/>
+        <div className="container">
             <h2>Get News Updates By Signup</h2>
-            <form id="Newsletter-form" method="post">
-                <label class="form-label" for="email"></label>
-                <input class="form-input" type="email" id="email" name="email" title="Epostadress" placeholder="username@domain.com" />
+            <form id="newsletter-form" method="post">
+                <label className="form-label" htmlFor="email"></label>
+                <input className="form-input" type="email" id="email" name="email" title="Epostadress" placeholder="username@domain.com" />
                 <Button text="Subscribe " icon="fa-regular fa-arrow-up-right"/>
             </form>
         </div>
