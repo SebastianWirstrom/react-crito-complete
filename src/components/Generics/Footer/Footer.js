@@ -1,7 +1,7 @@
 import React from 'react'
-import img_footerBackgroundLines from '../../assets/images/footer-background-lines.svg'
-import SocialMediaBar from '../../components/Generics/SocialMediaBar/SocialMediaBar'
-import img_logoFooter from '../../assets/images/Logo-footer.svg'
+import img_footerBackgroundLines from '../../../assets/images/footer-background-lines.svg'
+import SocialMediaBar from '../SocialMediaBar/SocialMediaBar'
+import img_logoFooter from '../../../assets/images/Logo-footer.svg'
 import FooterBox from './FooterBox'
 
 const Footer = () => {

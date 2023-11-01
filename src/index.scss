@@ -1499,6 +1499,8 @@ footer {
         }
 
         .contact-form-main {
+            
+            
 
             @media (min-width: 768px) {
                 margin-top: 50px;
@@ -1506,28 +1508,19 @@ footer {
 
             .contact-form {
                 background-color: #F0EFE9;
+                padding-top: 50px;
+                padding-bottom: 100px;
+                text-align: center;
 
                 @media (min-width: 768px) {
                     padding-top: 50px;
                 }
-                
-                .section-title {
-                    font-size: 45px;
-                    font-family: 'DM sans', sans-serif;
-                    font-weight: 700;
-                    text-align: center;
-                    padding: 20px 10px;
 
-                    @media (min-width: 768px) {
-                        padding: 20px 430px;
-                    }
-
-                }
-
-                .form-row {
+                .form-row {    
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
-                    align-items: center;
+                    align-items: center;                   
                     padding-top: 20px;
 
                     .form-input {
@@ -1552,29 +1545,23 @@ footer {
                     resize: none;
                     height: 200px;      
                 }
-                
-                .contact-button {
+
+                .btn-yellow {
                     display: flex;
-                    justify-content: center;
-                    text-align: center;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
+                    justify-content: center;   
+                    align-items: center;
+
+                    margin-left: 15px;
+                    margin-top: 40px;
+                    width: calc(100% - 30px);
 
                     @media (min-width: 768px) {
-                        padding-top: 50px;
-                        padding-bottom: 100px;
-                    }
-
-                    .btn-yellow {
-                        width: calc(100% - 30px);
-
-                        @media (min-width: 768px) {
-                            width: calc(100% - 300px);
-
-                        }
-                    }
+                        margin-left: 150px;
+                        width: calc(100% - 300px);
+                        
+                    }   
                 }
-            }
+            }       
         }      
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Showcase from '../components/ShowcaseSection/Showcase'
+import Showcase from '../components/HomeShowcaseSection/Showcase'
 import PartnersLogo from '../components/PartnersLogoSection/PartnersLogo'
 import Features from '../components/FeaturesSection/Features'
 import AboutCompany from '../components/AboutCompanySection/AboutCompany'
@@ -11,7 +11,7 @@ import MeetOurTeam from '../components/MeetOurTeamSection/MeetOurTeam'
 import Testimonial from '../components/TestimonialSection/Testimonial'
 import ArticlesAndNews from '../components/ArticlesSection/ArticlesAndNews'
 import Newsletter from '../components/NewsletterSection/Newsletter'
-import Footer from '../components/Footer/Footer'
+import Footer from '../components/Generics/Footer/Footer'
 
 const Home = () => {
   return (
