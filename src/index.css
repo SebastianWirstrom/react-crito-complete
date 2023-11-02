@@ -1231,6 +1231,12 @@ footer .footer-bottom .social-media {
        column-gap: 40px;
   row-gap: 60px;
 }
+.news-and-articles .container .articles .article {
+  text-decoration: none;
+}
+.news-and-articles .container .articles .article:hover {
+  background-color: #fffbbe;
+}
 .news-and-articles .container .articles .article img {
   width: 420px;
   height: 230px;

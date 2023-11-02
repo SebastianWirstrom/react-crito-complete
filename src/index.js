@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Views/Home';
 import NotFound from './Views/NotFound';
 import News from './Views/News';
+import NewsDetails from './Views/NewsDetails'
 import Contacts from './Views/Contacts';
 import './index.css';
 
@@ -16,8 +17,10 @@ root.render(
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/News' element={<News />} />
+        <Route path='/News/:id' element={<NewsDetails />} />
         <Route path='/Contacts' element={<Contacts />} />
         <Route path='*' element={<NotFound />} />
+        
       </Routes>
     </BrowserRouter>
   

@@ -1430,8 +1430,10 @@ footer {
 // News & Articles page
 
 .news-and-articles {
+
     .container {
         margin-bottom: 100px;
+
         .section-title {
             margin-top: 120px;
             margin-bottom: 40px;
@@ -1445,7 +1447,12 @@ footer {
             row-gap: 60px;
 
             .article {
-                
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #fffbbe;
+                }
+
                 img {
                    width: 420px;
                    height: 230px;
