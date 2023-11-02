@@ -2,6 +2,8 @@ import React from 'react'
 import Button from '../Generics/Button/Button'
 
 const ContactForm = () => {
+
+  
   return (
     <>
       <form id="contact-form" method="post">

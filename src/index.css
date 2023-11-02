@@ -1216,6 +1216,49 @@ footer .footer-bottom .social-media {
   }
 }
 
+.news-and-articles .container {
+  margin-bottom: 100px;
+}
+.news-and-articles .container .section-title {
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+.news-and-articles .container .articles {
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 60px;
+}
+.news-and-articles .container .articles .article img {
+  width: 420px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-and-articles .container .articles .article h4 {
+  color: #6A6C71;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.news-and-articles .container .articles .article h3 {
+  color: #191919;
+  font-size: 22px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.news-and-articles .container .articles .article p {
+  color: #6A6C71;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
 .contacts-showcase-main {
   background-color: #F0EFE9;
   position: relative;
