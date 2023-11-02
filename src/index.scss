@@ -1494,17 +1494,16 @@ footer {
 
 .news-details {
     .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 180px;
         
-        .section-title {
-            margin-bottom: 15px;
-            padding-right: 600px;
-            
-        }
-
         .article-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 180px;
+
+            .section-title {
+                margin-top: 80px;
+                margin-bottom: 15px;
+            }
 
             .article {
                 display: flex;
@@ -1533,19 +1532,68 @@ footer {
                     margin-bottom: 30px;
                 }
             }
-            #search-bar {
+        }  
+        
+        .right-column {
+            margin-top: 240px;
+            
+            .search-bar-input-container {
+                display: flex;
+                align-items: center;
+                border: none;
+                background-color: #f3f3f3;
+                border-radius: 25px;
+                padding: 10px 20px;
+                
+                
+              
+                .fa-magnifying-glass {
+                    margin-right: 8px; 
+                    color: #191919; 
+                }
+              
+                .search-bar-input {
+                    background-color: #f3f3f3;
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 5px;
+                    font-size: 14px;
+                }
+            }
 
-                .search-bar-input-container {
-                    
-                    .search-bar-input {
-                        
-                    }
+            .recent-posts {
+                border: 1px solid #e7e7e7;
+                padding: 40px;
+                margin-top: 20px;
+
+                h3 {
+                    font-size: 22px;
+                    margin-bottom: 20px;
                 }
 
+                .posts {
+                    
+                    .post {
+                        color: #191919;
+                        text-decoration: none;
+                    }
+
+                    h4 {
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                    }
+
+                    p {
+                        color: #5e5e5e;
+                        font-size: 14px;
+                        font-weight: 500;
+                        border-bottom: 1px solid #e7e7e7;
+                    }
+                }
                 
             }
-                  
-        }     
+        }
     }
 }
 
