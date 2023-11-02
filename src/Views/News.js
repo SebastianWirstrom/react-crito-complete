@@ -4,7 +4,7 @@ import ShowcaseSection from '../components/Generics/AllShowcaseSection/ShowcaseS
 import Newsletter from '../components/NewsletterSection/Newsletter'
 import Footer from '../components/Generics/Footer/Footer'
 import NewsAndArticlesSection from '../components/NewsAndArticlesSection/NewsAndArticlesSection'
-import SectionTitle from '../components/Generics/SectionTitle/SectionTitle'
+
 
 const News = () => {
   return (
