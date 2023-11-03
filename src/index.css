@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,900;1,9..40,400;1,9..40,500;1,9..40,600&family=Inter:wght@300;400;500;600&display=swap");
 html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
@@ -1281,6 +1281,13 @@ footer .footer-bottom .social-media {
 }
 .news-details .container .article-section .article .article-info {
   display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.news-details .container .article-section .article .article-info i {
+  font-size: 10px;
+  color: #f9d783;
+  margin-right: 20px;
 }
 .news-details .container .article-section .article .article-info .article-date {
   margin-right: 20px;
@@ -1293,9 +1300,22 @@ footer .footer-bottom .social-media {
   height: 500px;
   margin-top: 45px;
   margin-bottom: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .news-details .container .article-section .article #article-text-1 {
   margin-bottom: 30px;
+}
+.news-details .container .article-section .article #p-quote {
+  color: #191919;
+  font-size: 22px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  padding: 20px;
+}
+.news-details .container .article-section .article #p-quote i {
+  margin: 10px;
 }
 .news-details .container .right-column {
   margin-top: 240px;
@@ -1325,7 +1345,7 @@ footer .footer-bottom .social-media {
   padding: 40px;
   margin-top: 20px;
 }
-.news-details .container .right-column .recent-posts h3 {
+.news-details .container .right-column .recent-posts .recent-posts-text {
   font-size: 22px;
   margin-bottom: 20px;
 }
@@ -1333,15 +1353,22 @@ footer .footer-bottom .social-media {
   color: #191919;
   text-decoration: none;
 }
+.news-details .container .right-column .recent-posts .posts .post:last-child .list-item {
+  border-bottom: none;
+}
 .news-details .container .right-column .recent-posts .posts h4 {
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 0;
   font-size: 16px;
 }
-.news-details .container .right-column .recent-posts .posts p {
+.news-details .container .right-column .recent-posts .posts .list-item {
   color: #5e5e5e;
   font-size: 14px;
   font-weight: 500;
   border-bottom: 1px solid #e7e7e7;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  list-style: none;
 }
 
 .contacts-showcase-main {

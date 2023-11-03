@@ -16,6 +16,8 @@ const NewsAndArticlesSection = () => {
     setArticles(data.slice(0,9))
   }
 
+  
+
   return (
     <div className='news-and-articles'>    
       <div className='container'>

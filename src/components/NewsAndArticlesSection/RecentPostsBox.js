@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const RecentPostsBox = () => {
 
@@ -15,12 +15,17 @@ const RecentPostsBox = () => {
       setArticles(data.slice(0,4))
     }
 
+    const formatDate = (dateString) => {
+      const changeDate = { year: 'numeric', month: 'short', day: 'numeric' };
+      return new Date(dateString).toLocaleDateString(undefined, changeDate);
+    }
+
   return (
     <div className='posts'>
         {articles.map(article => (
             <Link key={article.id} to={`/news/${article.id}`} className='post'>           
               <h4>{article.title}</h4>
-              <p>{article.published}</p>
+              <li class="list-item">{formatDate(article.published)}</li>
             </Link>
           ))}   
     </div>
