@@ -3,9 +3,9 @@ import SectionTitle from '../Generics/SectionTitle/SectionTitle'
 import Button from '../Generics/Button/Button'
 import ArticlesAndNewsBox from './ArticlesAndNewsBox'
 
-const ArticlesAndNews = () => {
+const ArticlesAndNews = ({ style }) => {
   return (
-    <section className="article-section">
+    <section className="article-three" style={style}>
         <div className="container">             
             <div className="title">
                 <SectionTitle redTitle={"Articles & News"} title={"Get Every Single Article & News"}/>

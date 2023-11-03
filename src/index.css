@@ -76,6 +76,27 @@ html h3, body h3 {
   transition: 0.2s ease-in-out;
 }
 
+.btn-transparent {
+  background-color: #ffffff;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-transparent i {
+  margin-left: 10px;
+  font-size: 0, 9em;
+}
+.btn-transparent:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+  transition: 0.2s ease-in-out;
+}
+
 .section-title p {
   color: #F94D1C;
   font-family: "Inter", sans-serif;
@@ -1071,69 +1092,108 @@ footer .footer-bottom .social-media {
   padding: 12px 25px;
 }
 
-.article-section .container {
+.article-three .container {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.article-section .container .title {
+.article-three .container .title {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .article-section .container .title {
+  .article-three .container .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
   }
 }
-.article-section .container .title .button {
+.article-three .container .title .button {
   margin-top: 50px;
 }
-.article-section .container .articles-content {
+.article-three .container .articles-content {
   margin-top: 50px;
-}
-.article-section .container .articles-content img {
-  width: 100%;
 }
 @media (min-width: 768px) {
-  .article-section .container .articles-content {
-    display: flex;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+  .article-three .container .articles-content {
     margin-top: 40px;
   }
 }
-.article-section .container .articles-content .articles-div {
+@media (min-width: 768px) {
+  .article-three .container .articles-content .articles-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+.article-three .container .articles-content .articles-div .article {
+  text-decoration: none;
   position: relative;
 }
-.article-section .container .articles-content .articles-div .date-box {
+.article-three .container .articles-content .articles-div .article .date-box {
   position: absolute;
   background-color: #F9D783;
   padding: 10px 15px;
   text-align: center;
+  color: #191919;
   left: 15px;
-  top: 15px;
+  bottom: 65px;
 }
-.article-section .container .articles-content .articles-div .date-box h3 {
-  margin: 0;
+@media (min-width: 768px) {
+  .article-three .container .articles-content .articles-div .article .date-box {
+    left: 15px;
+    bottom: 355px;
+  }
 }
-.article-section .container .articles-content .articles-div .date-box p {
-  margin: 0;
-  margin-top: -7px;
+.article-three .container .articles-content .articles-div .article .date-box::before {
+  content: "";
+  font-weight: 700;
+  display: block;
 }
-.article-section .container .articles-content .articles-div #p-business {
-  margin-top: 20px;
+.article-three .container .articles-content .articles-div .article img {
+  width: 365px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .article-three .container .articles-content .articles-div .article img {
+    width: 420px;
+    height: 230px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.article-three .container .articles-content .articles-div .article h4 {
   color: #6A6C71;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
 }
-.article-section .container .articles-content .articles-div h3 {
+.article-three .container .articles-content .articles-div .article h3 {
+  color: #191919;
   font-size: 22px;
   font-family: "DM Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 20px;
-  line-height: 1.5;
 }
-.article-section .container .articles-content .articles-div p {
+.article-three .container .articles-content .articles-div .article p {
+  color: #6A6C71;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+@media (min-width: 768px) {
+  .article-three .container .articles-content .articles-div .article p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .newsletter {
@@ -1278,6 +1338,7 @@ footer .footer-bottom .social-media {
 .news-details .container .article-section .article {
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
 }
 .news-details .container .article-section .article .article-info {
   display: flex;

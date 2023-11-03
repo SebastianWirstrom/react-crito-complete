@@ -3,6 +3,8 @@ import NewsDetailsSection from '../components/NewsAndArticlesSection/NewsDetails
 import Header from '../components/Header/Header'
 import ShowcaseSection from '../components/Generics/AllShowcaseSection/ShowcaseSection'
 import Footer from '../components/Generics/Footer/Footer'
+import ArticlesAndNews from '../components/ArticlesSection/ArticlesAndNews'
+
 
 const NewsDetails = () => {
   return (
@@ -10,6 +12,7 @@ const NewsDetails = () => {
     <Header/>
     <ShowcaseSection currentPage={"News"} headline={"News & Articles"} />
     <NewsDetailsSection/>
+    <ArticlesAndNews style={{backgroundColor: '#F0EFE9'}}/>
     <Footer/>
     </>
   )

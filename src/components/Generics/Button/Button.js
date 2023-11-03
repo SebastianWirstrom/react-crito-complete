@@ -9,6 +9,8 @@ function Button({type, link, text, icon}) {
                 return 'btn-black'
             case 'transparent':
                 return 'btn-transparent'
+            case 'white':
+                return 'btn-white'
             default :
                 return 'btn-yellow'
         }
