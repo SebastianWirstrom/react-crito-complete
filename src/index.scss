@@ -162,6 +162,10 @@ header {
                     color: #191919;
                     text-decoration: none;
                 }
+                
+                .active {
+                    font-weight: 900;
+                }
             }
 
             .mobile-menu-bars {
@@ -1750,9 +1754,11 @@ footer {
                 border: 1px solid #e7e7e7;
                 padding: 40px;
                 margin-top: 40px;  
+                margin-bottom: 12px;
                 
                 @media (min-width: 768px) {
                     margin-top: 30px;
+                    margin-bottom: 0;
                 }
 
                 .recent-posts-text {
@@ -1790,12 +1796,13 @@ footer {
             }
 
             .categories {
+                display: none;
                 border: 1px solid #e7e7e7;
                 padding: 40px;
                 margin-top: 40px;  
-                
+
                 @media (min-width: 768px) {
-                    margin-top: 30px;
+                    display: block;
                 }
 
                 .title-box {

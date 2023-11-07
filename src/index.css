@@ -146,6 +146,9 @@ header .container .mobile-menu .top-menu-mobile .link {
   color: #191919;
   text-decoration: none;
 }
+header .container .mobile-menu .top-menu-mobile .active {
+  font-weight: 900;
+}
 header .container .mobile-menu .mobile-menu-bars {
   font-size: 25px;
   border: none;
@@ -1501,10 +1504,12 @@ footer .footer-bottom .social-media {
   border: 1px solid #e7e7e7;
   padding: 40px;
   margin-top: 40px;
+  margin-bottom: 12px;
 }
 @media (min-width: 768px) {
   .news-details .container .right-column .recent-posts {
     margin-top: 30px;
+    margin-bottom: 0;
   }
 }
 .news-details .container .right-column .recent-posts .recent-posts-text {
@@ -1533,13 +1538,14 @@ footer .footer-bottom .social-media {
   list-style: none;
 }
 .news-details .container .right-column .categories {
+  display: none;
   border: 1px solid #e7e7e7;
   padding: 40px;
   margin-top: 40px;
 }
 @media (min-width: 768px) {
   .news-details .container .right-column .categories {
-    margin-top: 30px;
+    display: block;
   }
 }
 .news-details .container .right-column .categories .title-box {
