@@ -126,13 +126,33 @@ header .container {
   justify-content: space-between;
   gap: 70px;
 }
-header .container .mobile-menu-bars {
+header .container .mobile-menu {
+  position: relative;
+}
+header .container .mobile-menu .top-menu-mobile {
+  position: absolute;
+  left: -350px;
+  top: -20px;
+  padding: 25px 10px;
+  z-index: 1;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  background-color: #edcf86;
+  border-radius: 25px;
+  border: 1px solid #c7ad6d;
+}
+header .container .mobile-menu .top-menu-mobile .link {
+  color: #191919;
+  text-decoration: none;
+}
+header .container .mobile-menu .mobile-menu-bars {
   font-size: 25px;
   border: none;
   background-color: transparent;
 }
 @media (min-width: 992px) {
-  header .container .mobile-menu-bars {
+  header .container .mobile-menu .mobile-menu-bars {
     display: none;
   }
 }
@@ -396,6 +416,12 @@ footer .footer-bottom .social-media {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  .showcase .container {
+    padding-top: 0;
+  }
 }
 .showcase .container .content {
   padding-top: 40px;
@@ -545,6 +571,12 @@ footer .footer-bottom .social-media {
 .features .container .feature-content .feat-box {
   margin: 20px 20px;
   border-bottom: 1px solid #dad9d3;
+}
+.features .container .feature-content .feat-box h3 {
+  font-weight: 700;
+}
+.features .container .feature-content .feat-box p {
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .features .container .feature-content .feat-box {
@@ -1094,7 +1126,11 @@ footer .footer-bottom .social-media {
 
 .article-three .container {
   padding-top: 80px;
-  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .article-three .container {
+    padding-bottom: 80px;
+  }
 }
 .article-three .container .title {
   text-align: center;
@@ -1271,23 +1307,46 @@ footer .footer-bottom .social-media {
   }
 }
 
-.news-and-articles .container {
-  margin-bottom: 100px;
+@media (min-width: 768px) {
+  .news-and-articles .container {
+    margin-bottom: 100px;
+  }
 }
 .news-and-articles .container .section-title {
-  margin-top: 120px;
-  margin-bottom: 40px;
+  display: none;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .news-and-articles .container .section-title {
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
 }
 .news-and-articles .container .articles {
-  display: grid;
-  grid-auto-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  row-gap: 60px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .news-and-articles .container .articles {
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    row-gap: 60px;
+  }
 }
 .news-and-articles .container .articles .article {
   text-decoration: none;
+  border-bottom: 1px solid #d1d1d1;
+}
+@media (min-width: 768px) {
+  .news-and-articles .container .articles .article {
+    border: none;
+  }
+}
+.news-and-articles .container .articles .article .article-content {
   position: relative;
 }
 .news-and-articles .container .articles .article .date-box {
@@ -1297,22 +1356,29 @@ footer .footer-bottom .social-media {
   text-align: center;
   color: #191919;
   left: 15px;
-  bottom: 65px;
+  top: -250px;
 }
 @media (min-width: 768px) {
   .news-and-articles .container .articles .article .date-box {
-    left: 15px;
-    bottom: 370px;
+    top: -235px;
   }
 }
 .news-and-articles .container .articles .article:hover {
   background-color: #fffbbe;
 }
 .news-and-articles .container .articles .article img {
-  width: 420px;
-  height: 230px;
+  margin-top: 18px;
+  width: 100%;
+  height: 245px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 768px) {
+  .news-and-articles .container .articles .article img {
+    margin-top: 0;
+    width: 420px;
+    height: 230px;
+  }
 }
 .news-and-articles .container .articles .article h4 {
   color: #6A6C71;
@@ -1336,16 +1402,24 @@ footer .footer-bottom .social-media {
   margin-top: 20px;
 }
 
-.news-details .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 180px;
-       column-gap: 180px;
-  margin-bottom: 50px;
+@media (min-width: 768px) {
+  .news-details .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 180px;
+         column-gap: 180px;
+    margin-bottom: 50px;
+  }
 }
 .news-details .container .article-section .section-title {
-  margin-top: 80px;
-  margin-bottom: 15px;
+  padding: 10px 10px;
+}
+@media (min-width: 768px) {
+  .news-details .container .article-section .section-title {
+    padding: 0;
+    margin-top: 80px;
+    margin-bottom: 15px;
+  }
 }
 .news-details .container .article-section .article {
   display: flex;
@@ -1369,15 +1443,23 @@ footer .footer-bottom .social-media {
   margin-right: 20px;
 }
 .news-details .container .article-section .article img {
-  width: 760px;
-  height: 500px;
-  margin-top: 45px;
-  margin-bottom: 45px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.news-details .container .article-section .article #article-text-1 {
-  margin-bottom: 30px;
+@media (min-width: 768px) {
+  .news-details .container .article-section .article img {
+    width: 760px;
+    height: 500px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 768px) {
+  .news-details .container .article-section .article #article-text-1 {
+    margin-bottom: 30px;
+  }
 }
 .news-details .container .article-section .article #p-quote {
   color: #191919;
@@ -1390,8 +1472,10 @@ footer .footer-bottom .social-media {
 .news-details .container .article-section .article #p-quote i {
   margin: 10px;
 }
-.news-details .container .right-column {
-  margin-top: 240px;
+@media (min-width: 768px) {
+  .news-details .container .right-column {
+    margin-top: 240px;
+  }
 }
 .news-details .container .right-column .search-bar-input-container {
   display: flex;
@@ -1416,7 +1500,12 @@ footer .footer-bottom .social-media {
 .news-details .container .right-column .recent-posts {
   border: 1px solid #e7e7e7;
   padding: 40px;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .news-details .container .right-column .recent-posts {
+    margin-top: 20px;
+  }
 }
 .news-details .container .right-column .recent-posts .recent-posts-text {
   font-size: 22px;

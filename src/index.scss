@@ -142,15 +142,40 @@ header {
         justify-content: space-between;
         gap: 70px;
         
-        .mobile-menu-bars {
-            font-size: 25px;
-            border: none;
-            background-color: transparent;
+        .mobile-menu {
+            position: relative;
+            
+            .top-menu-mobile {
+                position: absolute;
+                left: -350px;
+                top: -20px;
+                padding: 25px 10px;
+                
+                z-index: 1;
+                display: flex;
+                column-gap: 30px;  
+                background-color: #edcf86; 
+                border-radius: 25px;
+                border: 1px solid #c7ad6d;
+                
+                .link {
+                    color: #191919;
+                    text-decoration: none;
+                }
+            }
 
-            @media (min-width: 992px) {
-                display: none;
+            .mobile-menu-bars {
+                
+                font-size: 25px;
+                border: none;
+                background-color: transparent;
+    
+                @media (min-width: 992px) {
+                    display: none;
+                }
             }
         }
+        
 
         .menu {
             display: none;
@@ -452,6 +477,11 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 50px;
+
+        @media (min-width: 768px) {
+            padding-top: 0;
+        }
         
         .content {
             padding-top: 40px;
@@ -616,8 +646,16 @@ footer {
             }
 
             .feat-box {
-                margin: 20px 20px;   
+                margin: 20px 20px;       
                 border-bottom: 1px solid #dad9d3;
+
+                h3 {
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 400;
+                }
 
                 @media (min-width: 768px) {
                     margin-top: 60px;
@@ -1289,7 +1327,10 @@ footer {
     
     .container {
         padding-top: 80px;
-        padding-bottom: 80px;
+        
+        @media (min-width: 768px) {
+            padding-bottom: 80px;
+        }
     
         .title {
             text-align: center;
@@ -1302,8 +1343,7 @@ footer {
             }
 
             .button {
-                margin-top: 50px;   
-                         
+                margin-top: 50px;             
             }
         }
 
@@ -1490,25 +1530,47 @@ footer {
 // News & Articles page
 
 .news-and-articles {
-
+    
     .container {
-        margin-bottom: 100px;
+        
+        @media (min-width: 768px) {
+            margin-bottom: 100px;
+        }
 
         .section-title {
-            margin-top: 120px;
-            margin-bottom: 40px;
+            display: none;
+            margin-top: 20px;
+
+            @media (min-width: 768px) { 
+                display: flex;
+                margin-top: 120px;
+                margin-bottom: 40px;
+            }
         }
 
         .articles {
-            display: grid;
-            grid-auto-columns: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 40px;
-            row-gap: 60px;
+            display: flex;
+            flex-direction: column;
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-auto-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 40px;
+                row-gap: 60px;
+            }
 
             .article {
                 text-decoration: none;
-                position: relative;
+                border-bottom: 1px solid #d1d1d1;
+
+                @media (min-width: 768px) {
+                    border: none;
+                }
+                
+                .article-content {
+                    position: relative;
+                }
                     
                 .date-box {
                     position: absolute;
@@ -1517,12 +1579,11 @@ footer {
                     text-align: center;                       
                     color: #191919; 
                     left: 15px;
-                    bottom: 65px;
-                        
+                    top: -250px;  
+                    
                     @media (min-width: 768px) {
-                        left: 15px;
-                        bottom: 370px;
-                    }                      
+                        top: -235px;
+                    }
                 }
 
                 &:hover {
@@ -1530,9 +1591,17 @@ footer {
                 }
 
                 img {
-                   width: 420px;
-                   height: 230px;
-                   object-fit: cover;
+                    margin-top: 18px;
+                    width: 100%;
+                    height: 245px;
+                    object-fit: cover;
+
+                    @media (min-width: 768px) {
+                        margin-top: 0;
+                        width: 420px;
+                        height: 230px;
+                    }
+
                 }
     
                 h4 {
@@ -1569,17 +1638,24 @@ footer {
 
 .news-details {
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 180px;
-        margin-bottom: 50px;
-        
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 180px;
+            margin-bottom: 50px;
+        }
+
         .article-section {
 
             .section-title {
-                margin-top: 80px;
-                margin-bottom: 15px;
+                padding: 10px 10px;
                 
+                @media (min-width: 768px) {
+                    padding: 0;
+                    margin-top: 80px;
+                    margin-bottom: 15px;
+                }
             }
 
             .article {
@@ -1590,8 +1666,7 @@ footer {
                 .article-info {
                     display: flex;
                     justify-content: left;
-                    align-items: center;
-                    
+                    align-items: center;                   
 
                     i {
                         font-size: 10px;
@@ -1609,16 +1684,22 @@ footer {
                 }
     
                 img {
-                    width: 760px;
-                    height: 500px;
-                    margin-top: 45px;
-                    margin-bottom: 45px;
-                    object-fit: cover; 
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+
+                    @media (min-width: 768px) {
+                        width: 760px;
+                        height: 500px;
+                        margin-top: 45px;
+                        margin-bottom: 45px;
+                        object-fit: cover; 
+                    }
                 }
         
                 #article-text-1 {
-                    
-                    margin-bottom: 30px;
+                    @media (min-width: 768px) { 
+                        margin-bottom: 30px;
+                    }  
                 }
 
                 #p-quote {
@@ -1637,8 +1718,10 @@ footer {
         }  
         
         .right-column {
-            margin-top: 240px;
-            
+            @media (min-width: 768px) {
+                margin-top: 240px;
+            }
+
             .search-bar-input-container {
                 display: flex;
                 align-items: center;
@@ -1646,6 +1729,7 @@ footer {
                 background-color: #f3f3f3;
                 border-radius: 25px;
                 padding: 10px 20px;
+                
               
                 .fa-magnifying-glass {
                     margin-right: 8px; 
@@ -1665,7 +1749,11 @@ footer {
             .recent-posts {
                 border: 1px solid #e7e7e7;
                 padding: 40px;
-                margin-top: 20px;         
+                margin-top: 40px;  
+                
+                @media (min-width: 768px) {
+                    margin-top: 20px;
+                }
 
                 .recent-posts-text {
                     font-size: 22px;
