@@ -1719,7 +1719,7 @@ footer {
         
         .right-column {
             @media (min-width: 768px) {
-                margin-top: 240px;
+                margin-top: 245px;
             }
 
             .search-bar-input-container {
@@ -1752,7 +1752,7 @@ footer {
                 margin-top: 40px;  
                 
                 @media (min-width: 768px) {
-                    margin-top: 20px;
+                    margin-top: 30px;
                 }
 
                 .recent-posts-text {
@@ -1787,6 +1787,45 @@ footer {
                         list-style: none;
                     }
                 }           
+            }
+
+            .categories {
+                border: 1px solid #e7e7e7;
+                padding: 40px;
+                margin-top: 40px;  
+                
+                @media (min-width: 768px) {
+                    margin-top: 30px;
+                }
+
+                .title-box {
+                    font-size: 22px;
+                    margin-bottom: 20px;  
+                }  
+                
+                .categories-list {
+    
+                    
+
+                    .listed-category {
+                        display: flex;
+                        justify-content: left;
+                        
+                        
+                        h5 {
+                            font-size: 16px;
+                            font-family: 'DM Sans', sans-serif;
+                            font-weight: 700;
+                            
+                        }
+                        p {
+                            margin-left: 5px;
+                            font-size: 16px;
+                            font-family: 'DM Sans', sans-serif;
+                            font-weight: 300;
+                        }
+                    }
+                }
             }
         }
     }

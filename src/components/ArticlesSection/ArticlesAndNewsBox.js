@@ -22,12 +22,16 @@ const ArticlesAndNewsBox = () => {
     return new Date(dateString).toLocaleDateString(undefined, changeDate);
   }
 
+  const clickOnArticle = () => {
+    window.scrollTo(0,0)
+  }
+
   return ( 
     <div className='articles-content'>
       <div className='articles-div'>
         {articles.map((article) => (
-          <Link key={article.id} to={`/news/${article.id}`} className='article'>
-            <img src={article.imageUrl} />
+          <Link key={article.id} onClick={clickOnArticle} to={`/news/${article.id}`} className='article'>
+            <img src={article.imageUrl}/>
             <div className='date-box'>{formatDate(article.published)}</div>
             <h4>// {article.category}</h4>
             <h3>{article.title}</h3>

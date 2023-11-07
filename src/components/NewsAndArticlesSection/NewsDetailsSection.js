@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import SectionTitle from '../Generics/SectionTitle/SectionTitle'
 import RecentPostsBox from './RecentPostsBox'
+import CategoriesBox from './CategoriesBox'
 
 const NewsDetailsSection = () => {
     const [article, setArticle] = useState({})
@@ -60,8 +61,12 @@ const NewsDetailsSection = () => {
                     </div>
                 </form>
                 <div className="recent-posts">
-                    <h3 className="recent-posts-text">Recent Posts</h3>
+                    <h3 className="title-box">Senaste artiklar</h3>
                     <RecentPostsBox />
+                </div>
+                <div className="categories">
+                    <h3 className="title-box">Kategorier</h3>
+                    <CategoriesBox />
                 </div>
             </div>
         </div>
