@@ -1340,13 +1340,7 @@ footer {
                         @media (min-width: 768px) {
                             left: 15px;
                             bottom: 355px;
-                        }
-                        
-                        &::before {
-                            content: ''; 
-                            font-weight: 700; 
-                            display: block; 
-                        }
+                        }                      
                     }
 
                     img {
@@ -1514,6 +1508,22 @@ footer {
 
             .article {
                 text-decoration: none;
+                position: relative;
+                    
+                .date-box {
+                    position: absolute;
+                    background-color: #F9D783;
+                    padding: 10px 15px;
+                    text-align: center;                       
+                    color: #191919; 
+                    left: 15px;
+                    bottom: 65px;
+                        
+                    @media (min-width: 768px) {
+                        left: 15px;
+                        bottom: 370px;
+                    }                      
+                }
 
                 &:hover {
                     background-color: #fffbbe;
@@ -1562,6 +1572,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 180px;
+        margin-bottom: 50px;
         
         .article-section {
 

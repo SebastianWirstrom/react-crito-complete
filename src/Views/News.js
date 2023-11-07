@@ -11,7 +11,6 @@ const News = () => {
     <>
       <Header />
       <ShowcaseSection currentPage={"News"} headline={"Articles & News"}/>
-      
       <NewsAndArticlesSection/>
       <Newsletter />
       <Footer />

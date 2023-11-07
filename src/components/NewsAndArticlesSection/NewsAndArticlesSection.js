@@ -16,7 +16,10 @@ const NewsAndArticlesSection = () => {
     setArticles(data.slice(0,9))
   }
 
-  
+  const formatDate = (dateString) => {
+    const changeDate = {month:'short', day:'numeric'};
+    return new Date(dateString).toLocaleDateString(undefined, changeDate);
+  }
 
   return (
     <div className='news-and-articles'>    
@@ -26,6 +29,7 @@ const NewsAndArticlesSection = () => {
           {articles.map(article => (
             <Link key={article.id} to={`/news/${article.id}`} className='article'>
               <img src={article.imageUrl}/>
+              <div className='date-box'>{formatDate(article.published)}</div>
               <h4>// {article.category}</h4>
               <h3>{article.title}</h3>
               <p>{article.content}</p>

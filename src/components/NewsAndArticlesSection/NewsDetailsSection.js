@@ -35,9 +35,9 @@ const NewsDetailsSection = () => {
                 <div className='article'>
                     <div className='article-info'>
                         <div className='article-date'>{formatDate(article.published)}</div>
-                        <i class="fa-solid fa-circle"></i>
+                        <i className="fa-solid fa-circle"></i>
                         <div className='article-category'>{article.category}</div>
-                        <i class="fa-solid fa-circle"></i>
+                        <i className="fa-solid fa-circle"></i>
                         <div className='article-author'>{article.author}</div>
                     </div>    
                     <img src={article.imageUrl}/>
@@ -46,7 +46,7 @@ const NewsDetailsSection = () => {
                         <p id='article-text-1'>Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. uspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.</p>
                         <p id='article-text-1'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.</p>
                         <p id='article-text-1'>Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.</p>
-                        <p id='p-quote'><i class="fa-sharp fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.<i class="fa-sharp fa-solid fa-quote-right"></i></p>
+                        <p id='p-quote'><i className="fa-sharp fa-solid fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.<i className="fa-sharp fa-solid fa-quote-right"></i></p>
                         <p id='article-text-1'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. unc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                     </div>   
                 </div> 

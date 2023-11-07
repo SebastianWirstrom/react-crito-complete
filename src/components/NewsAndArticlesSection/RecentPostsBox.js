@@ -25,7 +25,7 @@ const RecentPostsBox = () => {
         {articles.map(article => (
             <Link key={article.id} to={`/news/${article.id}`} className='post'>           
               <h4>{article.title}</h4>
-              <li class="list-item">{formatDate(article.published)}</li>
+              <li className="list-item">{formatDate(article.published)}</li>
             </Link>
           ))}   
     </div>
