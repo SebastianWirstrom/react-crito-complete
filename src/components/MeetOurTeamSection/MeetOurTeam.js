@@ -10,7 +10,7 @@ const MeetOurTeam = () => {
                 <div className="title">
                     <SectionTitle redTitle={"Meet Our Team"} title={"Experienced Team Members"}/>
                     <div className="button">
-                        <Button text="Browse Team" icon="fa-regular fa-arrow-up-right"/>
+                        <Button text="Browse Team" icon="fa-regular fa-arrow-up-right" link="/team/"/>
                     </div>              
                 </div>
                 <div className="portraits">

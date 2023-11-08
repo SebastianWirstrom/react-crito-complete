@@ -374,6 +374,15 @@ footer {
             p {
                 color: #b6b6bc;
             }
+
+            .footer-links {
+                text-decoration: none;
+                color: #b6b6bc;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
              
     }

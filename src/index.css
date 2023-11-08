@@ -329,6 +329,13 @@ footer .container .footer-content h3 {
 footer .container .footer-content p {
   color: #b6b6bc;
 }
+footer .container .footer-content .footer-links {
+  text-decoration: none;
+  color: #b6b6bc;
+}
+footer .container .footer-content .footer-links:hover {
+  text-decoration: underline;
+}
 footer .footer-bottom {
   border-top: 1px solid #3e404d;
   padding-top: 30px;
