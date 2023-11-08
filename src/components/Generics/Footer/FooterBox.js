@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const linkList = [
     ["About", "Features", "Works", "Career"],
     ["Customer-Support", "Delivery-Details", "Terms-Conditions", "Privacy-Policy"],
-    ["Free-eBooks", "Development-Tutorial", "How-To-Blog", "Youtube-Playlist"],
+    ["Free-eBooks", "Development-Tutorial", "How-To-Blog", "Youtube-Playlist"]
 ]
 
 const formatLinkText = (text) => {
@@ -26,7 +26,7 @@ const FooterBox = () => {
             <div key={box.id} className='footer-content'>
                 <h3>{box.title}</h3>
                 {box.link.map((link, index) => (
-                    <p><Link to={link} key={index} className='footer-links'>{formatLinkText(link)}</Link></p>
+                    <Link to={link} key={index} className='footer-links'>{formatLinkText(link)}</Link>
                 ))}
             </div>
         ))}

@@ -300,6 +300,7 @@ footer .container .footer-content-logo {
   footer .container .footer-content-logo {
     display: grid;
     text-align: left;
+    margin-right: 15px;
   }
 }
 footer .container .footer-content-logo img {
@@ -308,7 +309,7 @@ footer .container .footer-content-logo img {
 }
 @media (min-width: 768px) {
   footer .container .footer-content-logo img {
-    margin-top: 0;
+    margin-top: -20px;
     margin-bottom: 0;
   }
 }
@@ -326,12 +327,10 @@ footer .container .footer-content h3 {
   margin-bottom: 40px;
   color: #FFFFFF;
 }
-footer .container .footer-content p {
-  color: #b6b6bc;
-}
 footer .container .footer-content .footer-links {
   text-decoration: none;
   color: #b6b6bc;
+  margin-bottom: 15px;
 }
 footer .container .footer-content .footer-links:hover {
   text-decoration: underline;
