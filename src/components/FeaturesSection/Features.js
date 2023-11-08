@@ -3,6 +3,7 @@ import FeaturesBox from './FeaturesBox'
 import Button from '../Generics/Button/Button'
 import SectionTitle from '../Generics/SectionTitle/SectionTitle'
 
+
 function Features() {
 
     
@@ -12,7 +13,7 @@ function Features() {
             <div className="container">
                 <div className="title-and-button">
                     <SectionTitle redTitle={"Features"} title={"Our Accounting is Trusted by Thousands of Companies"}/>                  
-                    <Button href={"/consulting/"} text={"Get Consulting" } icon={"fa-regular fa-arrow-up-right"} />
+                    <Button link={"/consulting/"} text={"Get Consulting" } icon={"fa-regular fa-arrow-up-right"} />
                 </div>   
                 <div className="feature-content">  
                     <FeaturesBox /> 

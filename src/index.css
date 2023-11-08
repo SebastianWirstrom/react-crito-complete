@@ -935,13 +935,15 @@ footer .footer-bottom .social-media {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+}
+.gobal-projects .container .project-and-cases .project .projects-link {
   color: #191919;
   text-decoration: none;
 }
-.gobal-projects .container .project-and-cases .project img {
+.gobal-projects .container .project-and-cases .project .projects-link img {
   width: 100%;
 }
-.gobal-projects .container .project-and-cases .project h3 {
+.gobal-projects .container .project-and-cases .project .projects-link h3 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -949,7 +951,7 @@ footer .footer-bottom .social-media {
   padding-bottom: 16px;
   border-bottom: 1px solid #DAD9D3;
 }
-.gobal-projects .container .project-and-cases .project .readmore {
+.gobal-projects .container .project-and-cases .project .projects-link .readmore {
   padding: 15px;
   display: flex;
   justify-content: end;
@@ -959,14 +961,14 @@ footer .footer-bottom .social-media {
   text-decoration: none;
   color: #191919;
 }
-.gobal-projects .container .project-and-cases .project .readmore i {
+.gobal-projects .container .project-and-cases .project .projects-link .readmore i {
   margin-top: 5px;
   margin-left: 5px;
 }
-.gobal-projects .container .project-and-cases .project:hover .readmore p {
+.gobal-projects .container .project-and-cases .project .projects-link:hover .readmore p {
   text-decoration: underline;
 }
-.gobal-projects .container .project-and-cases .project:hover .readmore i {
+.gobal-projects .container .project-and-cases .project .projects-link:hover .readmore i {
   text-decoration: none;
 }
 .gobal-projects .container .center-button {

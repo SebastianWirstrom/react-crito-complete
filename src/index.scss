@@ -1105,47 +1105,54 @@ footer {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto 1fr auto;
-                color: #191919;
-                text-decoration: none;
+                
+                
 
-                img {
-                    width: 100%;
-                }
-
-                h3 {
-                    font-family: 'DM Sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 22px; 
-                    padding-top: 35px;
-                    padding-bottom: 16px;
-                    border-bottom: 1px solid #DAD9D3;
-                }
-
-                .readmore {
-                    padding: 15px;
-                    display: flex;
-                    justify-content: end;
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 500;
-                    font-size: 14px; 
-                    text-decoration: none;
+                .projects-link {
                     color: #191919;
+                    text-decoration: none;
 
-                    i {
-                        margin-top: 5px;
-                        margin-left: 5px;
+                    img {
+                        width: 100%;
                     }
-                }
-
-                &:hover .readmore {
-                    p {
-                        text-decoration: underline;
+    
+                    h3 {
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px; 
+                        padding-top: 35px;
+                        padding-bottom: 16px;
+                        border-bottom: 1px solid #DAD9D3;
                     }
-                    i {
+    
+                    .readmore {
+                        padding: 15px;
+                        display: flex;
+                        justify-content: end;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 500;
+                        font-size: 14px; 
                         text-decoration: none;
+                        color: #191919;
+    
+                        i {
+                            margin-top: 5px;
+                            margin-left: 5px;
+                        }
                     }
-                    
+    
+                    &:hover .readmore {
+                        p {
+                            text-decoration: underline;
+                        }
+                        i {
+                            text-decoration: none;
+                        }
+                        
+                    }
                 }
+
+                
             }
         }
 
