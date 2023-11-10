@@ -1710,6 +1710,16 @@ footer .footer-bottom .social-media {
   outline: none;
   background-color: #f8e2ad;
 }
+.contact-section .container .contact-form-main .contact-form .form-row label {
+  height: 1.5em;
+  visibility: visible;
+}
+.contact-section .container .contact-form-main .contact-form .form-row label.error {
+  color: red;
+}
+.contact-section .container .contact-form-main .contact-form .form-row label.hidden {
+  visibility: hidden;
+}
 .contact-section .container .contact-form-main .contact-form textarea {
   resize: none;
   height: 200px;
@@ -1723,7 +1733,7 @@ footer .footer-bottom .social-media {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 .contact-section .container .contact-form-main .contact-form .btn-submit i {
@@ -1739,22 +1749,19 @@ footer .footer-bottom .social-media {
 .contact-section .container .contact-form-main .contact-form .submit-message {
   position: relative;
 }
-.contact-section .container .contact-form-main .contact-form .submit-message .error-message {
-  position: absolute;
-  display: flex;
-  left: 470px;
-  background-color: #fcc1b1;
-  color: #df3405;
-  padding: 20px 45px;
-  transition: opacity 0.5s ease-in-out;
-}
 .contact-section .container .contact-form-main .contact-form .submit-message .success-message {
-  position: absolute;
-  display: flex;
-  left: 470px;
+  display: inline-block;
+  width: auto;
+  visibility: visible;
   background-color: #9cdd9a;
-  color: #046609;
   padding: 20px 45px;
+  overflow: visible;
+  border-radius: 5px;
+  border: 1px solid #40a73c;
+}
+.contact-section .container .contact-form-main .contact-form .submit-message .success-message.hidden {
+  visibility: hidden;
+  transition: 2s ease-in-out;
 }
 
 .map-section {

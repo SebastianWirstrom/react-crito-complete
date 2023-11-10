@@ -2005,6 +2005,21 @@ footer {
                         outline: none;
                         background-color: #f8e2ad;   
                     }   
+
+                    label {
+                        height: 1.5em;
+                        visibility: visible;
+
+                        &.error {
+                            
+                            color: red;
+                        }
+
+                        &.hidden {
+                            visibility: hidden;
+
+                        }
+                    }
                 }
 
                 textarea {
@@ -2021,7 +2036,7 @@ footer {
                     font-weight: 600;
                     font-size: 16px;
                     border-radius: 25px;
-                    margin-top: 20px;
+                    margin-top: 50px;
                     margin-bottom: 20px;
 
                     i {
@@ -2039,26 +2054,21 @@ footer {
 
                 .submit-message {
                     position: relative;
-                    
 
-                    .error-message {
-                        position: absolute;
-                        display: flex;
-                        left: 470px;
-                        background-color: #fcc1b1;
-                        color: #df3405;
-                        padding: 20px 45px;
-                        transition: opacity 0.5s ease-in-out;
-                    }
-    
                     .success-message {
-                        position: absolute;
-                        display: flex;
-                        left: 470px;
-                        background-color: #9cdd9a;
-                        color: #046609;
+                        display: inline-block;
+                        width: auto;
+                        visibility: visible;
+                        background-color: #9cdd9a; 
                         padding: 20px 45px;
-                        
+                        overflow: visible;
+                        border-radius: 5px;
+                        border: 1px solid #40a73c;
+                
+                        &.hidden {
+                            visibility: hidden;
+                            transition: 2s ease-in-out;
+                        }
                     }
                 }
             }       

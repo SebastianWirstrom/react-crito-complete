@@ -1,68 +1,68 @@
-import React, { useState } from 'react'
-
+import { useFormik } from 'formik'
+import React, { useState, useEffect } from 'react'
+import * as Yup from 'yup'
 
 const ContactForm = () => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-  const [errorMessage, setErrorMessage] = useState('')
-  const [successMessage, setSuccessMessage] = useState('')
-  const [showError, setShowError] = useState(false)
-  const [showSuccess, setShowSuccess] = useState(false)
+  const emailRegEx = new RegExp(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
+  const [successMessage, setSuccessMessage] = useState("")
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
+  const form = useFormik( {
+    initialValues: {
+      name: '',
+      email: '',
+      message: ''
+    },
+      validationSchema: Yup.object( {
+        name: Yup.string().required("Please enter your full name").min(2, "Your name must contain at least two characters"),
+        email: Yup.string().required("Please enter your E-mail").matches(emailRegEx, "Invalid email format"),
+        message: Yup.string().required("Please enter your message").min(2, "Your message must contain at least two characters"),
+      }),
 
-    const userMessage = { name, email, message }
-    const json = JSON.stringify(userMessage)
+      onSubmit: async (values, {setSubmitting}) => {
+        try {
+          const json = JSON.stringify(values)
+      
+          const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
+            method: 'post',
+            headers: { 'content-type': 'application/json'},
+            body: json
+          })
 
-    const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
-      method: 'post',
-      headers: { 'content-type': 'application/json'},
-      body: json
+          if (result.status === 200) {
+            setSuccessMessage("Your message has been submitted to us, thank you!")
+            console.log("200")
+          }      
+        }
+        catch (error) {
+          error = console.log('Error during API request')
+        }
+        finally {
+          setSubmitting(false)
+        } 
+      }   
     })
 
-    if (result.status === 200) {
-      clearForm()
-      setShowSuccess(true)
-      setShowError(false)
-      setSuccessMessage('Your message has been submitted!')
-      setErrorMessage('')
-    }
-    else {
-      setShowError(true)
-      setShowSuccess(false)
-      setErrorMessage('Something went wrong, try again!')
-      setSuccessMessage('')
-    }
-  }
+    
+    
 
-  const clearForm = () => {
-    setName('')
-    setEmail('')
-    setMessage('')
-    setShowError(false)
-  }
-  
   return (
     <>
-      <form id="contact-form" onSubmit={handleSubmit} noValidate>
+      <form id="contact-form" onSubmit={form.handleSubmit} noValidate>
           <div className="form-row">
-            <label className="form-label"/>
-            <input className="form-input" value={name} placeholder="Name*" tabIndex="1" onChange={(e) => setName(e.target.value)}/>
+            <label className={(form.touched.name && form.errors.name) ? 'error': ''}>{form.touched.name && form.errors.name ? form.errors.name : ''}</label>
+            <input className="form-input" name="name" type="text" value={form.values.name} onChange={form.handleChange} onBlur={form.handleBlur}/>
           </div>
           <div className="form-row">
-            <label className="form-label"/>
-            <input className="form-input" value={email} placeholder="Email*" tabIndex="2" onChange={(e) => setEmail(e.target.value)}/>
+            <label className={(form.touched.email && form.errors.email) ? 'error': ''}>{form.touched.email && form.errors.email ? form.errors.email : ''}</label>
+            <input className="form-input" name="email" type="email" value={form.values.email} onChange={form.handleChange} onBlur={form.handleBlur}/>
           </div>
           <div className="form-row">
-            <label className="form-label"/>
-            <textarea className="form-input" value={message} placeholder="Your Message*" tabIndex="3" onChange={(e) => setMessage(e.target.value)}/>
+            <label className={(form.touched.message && form.errors.message) ? 'error': ''}>{form.touched.message && form.errors.message ? form.errors.message : ''}</label>
+            <textarea className="form-input" name="message" type="text" value={form.values.message} onChange={form.handleChange} onBlur={form.handleBlur}/>
           </div>
-          <button type="submit" text="Send Message" className="btn-submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button>
+          <button type="submit" className="btn-submit">Send Message<i className="fa-regular fa-arrow-up-right"></i></button>
           <div className="submit-message">
-            {showError && <div className="error-message">{errorMessage}</div>}
-            {showSuccess && <div className="success-message">{successMessage}</div>}
+            <p className={`success-message ${successMessage ? '' : 'hidden'}`}>{successMessage}</p>
           </div>
       </form>
     </>
