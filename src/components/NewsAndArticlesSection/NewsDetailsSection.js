@@ -1,31 +1,22 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useEffect } from 'react'
 import SectionTitle from '../Generics/SectionTitle/SectionTitle'
 import RecentPostsBox from './RecentPostsBox'
 import CategoriesBox from './CategoriesBox'
+import { useArticles } from '../../Contexts/ArticleContext'
+import { useParams } from 'react-router-dom'
 
 const NewsDetailsSection = () => {
-    const [article, setArticle] = useState({})
+    
+    const { article, getArticle } = useArticles()
     const {id} = useParams()
 
     useEffect(() => {
-        getArticle()
-    }, [id])
-
-    const getArticle = async () => {
-        if (id !== '') {
-            const result = await fetch(`https://win23-assignment.azurewebsites.net/api/articles/${id}`)
-
-            if (result.status === 200) {
-                setArticle(await result.json())
-            }
-        }
-        
-    }
+        getArticle(id)
+    }, [id, getArticle])
 
     const formatDate = (dateString) => {
-        const changeDate = { year: 'numeric', month: 'short', day: 'numeric' };
-        return new Date(dateString).toLocaleDateString(undefined, changeDate);
+        const changeDate = { year: 'numeric', month: 'short', day: 'numeric' }
+        return new Date(dateString).toLocaleDateString(undefined, changeDate)
     }
 
     return (

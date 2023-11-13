@@ -1,5 +1,5 @@
 import { useFormik } from 'formik'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import * as Yup from 'yup'
 
 const ContactForm = () => {
@@ -34,16 +34,13 @@ const ContactForm = () => {
           }      
         }
         catch (error) {
-          error = console.log('Error during API request')
+          error = console.log('Error')
         }
         finally {
           setSubmitting(false)
         } 
       }   
     })
-
-    
-    
 
   return (
     <>
